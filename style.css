@@ -1,0 +1,378 @@
+body {
+    background-color: gray;
+}
+
+/*==============================================================*/
+
+#btncard {
+    background-color: rgb(173, 230, 206);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  2fr;
+    gap: 10px;
+    border: 2px solid red;
+    border-radius: 10px;
+    /* margin: 10px; */
+}
+
+@media (max-width: 700px) {
+    #btncard {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;   /*not working, not sure why*/
+    }
+    
+}
+
+#btns {
+    grid-column: span 3;
+    background-color: aqua;
+    padding: 20px;
+    width: 500px;
+    height: 80px;
+    top: 67px;
+    left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.btns {
+    width: 200px;
+    height: 60px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+    font-style: normal;
+
+}
+
+/*==============================================================*/
+
+#crdBlgCell {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+    font-style: normal;
+    border-radius: 10px;
+    margin-left: 20px;
+    
+}
+
+.card {
+    /* float: left; */
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 10px;
+    color: white;
+
+    width: 270px;
+    height: 436px;
+    margin: 10px 0 10px 0;
+   
+}
+
+#cardBlog {
+    border: 5px solid white;
+    font-size: x-large;
+    /* margin: 10px; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+#seeMoreCB {
+    
+    margin: 0px;
+    display: flex;
+    align-content: flex-end;
+    padding-top: 60px;
+    padding-left: 15px;
+    font-size: x-large;
+  }
+
+/*==============================================================*/
+
+#crdPriceCell {
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-evenly;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+    font-style: normal;
+}
+
+#priceCard {
+    align-content: space-around;
+    font-size: larger;   
+}
+
+#icon {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#priceCardImg {
+    top: 20px;
+    display: flex; 
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#pcTitles {
+    text-align: center;
+    font-size: 18px;
+}
+
+#pcTitle1 {
+    background: -webkit-linear-gradient(rgb(51, 204, 254), rgb(248, 69, 69));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#pcTitle2 {
+    color: red
+}
+
+#priceCarInfo { 
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0px;
+}
+
+#pcbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#priceButton {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    justify-content: center;
+    border: 1px solid red;
+    border-radius: 10px;;
+    margin-top: 20px;
+    padding: 10px;
+    width: 150px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+}
+/*==============================================================*/
+
+#crdSqCell {
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+#cardSquare {
+    width: 370px;
+    height: 502px;
+    top: 191px;
+    left:696px;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+}
+
+
+#cardSquareImg {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 11%;
+}
+
+#cardBody {
+    margin-left: 15px;
+    font-size: larger;
+}
+
+#seeMoreSQ {
+    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-left: 15px;
+    font-size: larger;
+  }
+
+@media (max-width: 500px) {
+    #btncard {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;   /*not working, not sure why*/
+    }
+    
+}
+
+/*======================= NAV BARS ======================================*/
+
+
+#nav-bars{
+    background-color: violet;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 20px;
+    width: 1440px;
+    height: 64px;
+}
+
+
+#nav1 {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr; */
+    height: 64px;
+    background-color: bisque;
+    display:flex;
+    /* flex-direction: row; */
+    align-items: center; 
+    justify-content: space-between;
+    /* gap: 1rem; */
+    /* padding: 0 10px 0 10px; */
+  
+}
+
+.nav1 {
+    padding:10px;
+}
+
+#navButton1 {
+    margin-right: 10px;
+    width: 140px;
+    height: 40px;
+}
+
+/*=============================================================*/
+
+/* NAV BARS SUCK!! */
+
+#nav2 {
+  
+    background-color: teal;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.nav2 {
+    padding:10px;
+}
+
+/* #nav1Title2 {
+
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0 5px 0 5px;
+
+
+} */
+
+#dest-sign {
+    display: flex;
+    align-items: center; 
+     justify-content: center;
+     padding-right: 10px;
+    /* flex-direction: row; */
+    /* margin: 0 10px 0 10px; */
+    /* padding-left: 10px; */
+}
+
+#navButton2 {
+    width: 140px;
+    height: 40px;
+}
+
+/*=============================================================*/
+
+
+#nav3 {
+    background-color: thistle;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav3 {
+    padding:10px;
+}
+
+#title-dest {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#accounts {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+ #navButton3 {
+    background-color: black;
+    color: white;
+    width: 140px;
+    height: 40px;
+    
+ }
+
+ /*=============================================================*/
+
+
+ #nav4 {
+    background-color: powderblue;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav4 {
+    padding:10px;
+}
+
+#navButton4 {
+    /* display: flex;
+    align-items: center; 
+    justify-content: center; */
+    background-color: black;
+    color: white;
+    width: 140px;
+    height: 40px;
+    margin-right: 10px;
+}
